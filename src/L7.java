@@ -23,5 +23,17 @@ public class L7{
 
         //using the roundTo2 object to call the format method from the DecimalFormat class.
         System.out.println("The number rounded to 3 decimals is " + roundTo3.format(number));
+
+        DecimalFormat currency = new DecimalFormat("$#,###.00");
+        System.out.println("You have " + currency.format(number));
+        System.out.println("You have " + currency.format(123456789.234569));
+
+        DecimalFormat percentage = new DecimalFormat("##%");
+        System.out.println("Sales tax is " + percentage.format(number));
+        System.out.println("sales tax is" + percentage.format(.07));
+
+        DecimalFormat crazy = new DecimalFormat("This is just Lotsa Money $#,###.00");
+
+        System.out.println(currency.format(500*1.05));
     }
 }
