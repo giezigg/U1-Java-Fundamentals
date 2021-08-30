@@ -7,7 +7,7 @@ public class L7{
         //creates a decimal object roundTo2 and initializes it.
         DecimalFormat roundTo2 = new DecimalFormat("0.00");
 
-        //creates a decimal object roundTo3 and initializes it.
+        //creates a decimal object roundTo3 and initializes it.`
         DecimalFormat roundTo3 = new DecimalFormat("0.000");
 
         //creates a double variable number and assigns it a decimal value
